@@ -1,0 +1,14 @@
+:root {
+    --primary: #6f74fc;
+    --secondary: white;
+    --third: #b06ffc;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
