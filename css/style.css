@@ -2,6 +2,7 @@
 :root {
   --primary: #6f74fc;
   --secondary: white;
+  --third: #b06ffc;
 }
 
 * {
@@ -14,6 +15,7 @@
 }
 
 body {
+  padding-top: 91.97px;
 }
 
 /* Navbar */
@@ -31,6 +33,10 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.navbar .navbar-logo img {
+  width: 10rem;
+}
+
 ul {
   display: flex;
   list-style-type: none;
@@ -40,10 +46,48 @@ ul {
 .navbar .navbar-list .menu li a {
   color: var(--primary);
   margin: 0 1rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .navbar .navbar-list .menu li a:hover {
-  border-bottom: var(--primary) 2px solid;
+  color: var(--third);
+  border-bottom: var(--third) 2px solid;
   transition: 0.1s linear;
+}
+/* Bagian menu dropdown */
+#hamburger-menu {
+  display: none;
+}
+
+/* MediaQueries */
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hambergur-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--secondary);
+    width: 30rem;
+    height: 100hv;
+  }
+
+  .navbar .navbar-list .active {
+    right: 0;
+  }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }
