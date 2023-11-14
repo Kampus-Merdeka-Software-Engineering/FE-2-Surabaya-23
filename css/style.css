@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
 /* Universal */
 :root {
   --primary: #6f74fc;
@@ -16,6 +18,8 @@
 
 body {
   padding-top: 91.97px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--secondary);
 }
 
 /* Navbar */
@@ -59,6 +63,33 @@ ul {
   display: none;
 }
 
+/* Landing Page */
+.landing-page {
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.landing-page .column {
+  flex: 1;
+  padding: 20px;
+}
+
+.landing-page .column h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: var(--background);
+}
+
+.landing-page .column .landing-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
 /* MediaQueries */
 
 /* Tablet */
