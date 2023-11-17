@@ -20,7 +20,7 @@
 body {
   padding-top: 91.97px;
   font-family: "Roboto", sans-serif;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 /* Navbar */
@@ -183,4 +183,171 @@ ul {
   html {
     font-size: 55%;
   }
+}
+
+/* ----- */
+/* Start to Page About Us */
+.hero{
+  display: flex;
+  padding: 0 7%;
+  background-color: var(--primary);
+  justify-content: space-between;
+  align-items: center;
+  max-height: 50vh;
+  overflow: visible;
+}  
+.hero h1 {
+  color: var(--secondary);
+  font-size: 4rem;
+}
+.hero-img {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 40vh;
+  border-radius: 20px;
+}
+.deskrip {
+  padding: 0 7%;
+  margin: 4.86rem 0 0;
+}
+.deskrip .title {
+  text-align: center;
+}
+.deskrip .title h2 {
+  color: var(--primary);
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+
+.deskrip .title h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.deskrip .title img {
+  width: 10rem;
+  margin-top: 1rem;
+}
+/* container visi misi */
+.container-vimisi {
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.container-vimisi-flex {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+.container-visi {
+  width: 400px;
+  height: 230px;
+  padding: 64.19000244140625px 50px 81.19998168945312px 50px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--secondary);
+  margin-top: 30px;
+}
+.container-misi {
+  width: 400px;
+  height: 230px;
+  padding: 64.19000244140625px 50px 81.19998168945312px 50px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--secondary);
+  margin-top: 30px;
+}
+
+/* start our team */
+.ourteam {
+  margin-top: 550px;
+  color: var(--primary);
+}
+.container-ourteam {
+  margin-top: 20px;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+.container-div1,
+.container-div2,
+.container-div3,
+.container-div4,
+.container-div5,
+.container-div6 {
+  width: 400px;
+  height: 270px;
+  background-color: var(--primary);
+  color: black;
+  border-radius: 30px;
+  font-family: "Roboto", serif;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.container-div1 img,
+.container-div2 img,
+.container-div3 img,
+.container-div4 img,
+.container-div5 img,
+.container-div6 img {
+  border-radius: 15% 15% 0 0;
+}
+.container-div1 h1,
+.container-div2 h1,
+.container-div3 h1,
+.container-div4 h1,
+.container-div5 h1,
+.container-div6 h1 {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+.container-div1 p,
+.container-div2 p,
+.container-div3 p,
+.container-div4 p,
+.container-div5 p,
+.container-div6 p {
+  margin-top: 10px;
+  color: black;
+  font-size: 0.8rem;
+}
+.container-rows2 {
+  width: 50%;
+  height: 220px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-top: 120px;
+}
+.container-1 {
+  display: flex;
+  gap: 6px;
+}
+
+.container-2 {
+  display: flex;
+  gap: 6px;
+}
+
+.containerdiv1-6 img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* transform: scale(0.9); */
+}
+
+.containerdiv1-6 {
+  margin-bottom: 115px;
+}
+
+.containerdiv1-6 img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* transform: scale(0.9); */
 }
