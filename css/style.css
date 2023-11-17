@@ -18,9 +18,8 @@
 }
 
 body {
-  padding-top: 91.97px;
   font-family: "Roboto", sans-serif;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 /* Navbar */
@@ -73,7 +72,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 91.97px 40px 40px 40px;
 }
 
 .landing-page .column-landing-page {
@@ -156,6 +155,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
+  color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .about-us .column-about {
