@@ -59,6 +59,7 @@ ul {
   border-bottom: var(--third) 2px solid;
   transition: 0.1s linear;
 }
+
 /* Bagian menu dropdown */
 #hamburger-menu {
   display: none;
@@ -92,7 +93,7 @@ ul {
   border-radius: 10%;
 }
 
-/* Bagian Top menu */
+/* Top Menu - Main Section Start */
 .top-menu {
   background-color: var(--secondary);
   color: var(--primary);
@@ -112,7 +113,7 @@ ul {
 .top-menu-2,
 .top-menu-3 {
   width: 30%;
-  height: 565px;
+  height: 32.5rem;
   flex-shrink: 0;
   border-radius: 10%;
   margin: 0px 25px;
@@ -146,12 +147,28 @@ ul {
 .top-menu .column-menu .top-menu-3 .best-menu-3 p {
   margin: 0;
 }
-/* About Us - Main Section */
-.about-us .img-about img {
-  max-width: 50%;
+/* Top Menu Main Section End */
+
+/* About Us - Main Section Start*/
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.about-us .column-about {
+  flex: 1;
+  padding: 1.25rem;
+}
+
+.about-us .column-about img {
+  max-width: 100%;
   height: auto;
   border-radius: 10%;
 }
+
 /* MediaQueries */
 
 /* Tablet */
