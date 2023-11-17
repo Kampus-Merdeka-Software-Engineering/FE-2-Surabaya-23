@@ -20,7 +20,7 @@
 body {
   padding-top: 91.97px;
   font-family: "Roboto", sans-serif;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 /* Navbar */
@@ -204,7 +204,7 @@ ul {
 
 /* ----- */
 /* Start to Page About Us */
-.hero{
+.hero {
   display: flex;
   padding: 0 7%;
   background-color: var(--primary);
@@ -212,7 +212,7 @@ ul {
   align-items: center;
   max-height: 50vh;
   overflow: visible;
-}  
+}
 .hero h1 {
   color: var(--secondary);
   font-size: 4rem;
@@ -224,6 +224,7 @@ ul {
   border-radius: 20px;
 }
 .deskrip {
+  background-color: var(--secondary);
   padding: 0 7%;
   margin: 4.86rem 0 0;
 }
@@ -253,6 +254,7 @@ ul {
   width: 100%;
   height: 50px;
   display: flex;
+  background-color: var(--secondary);
 }
 .container-vimisi-flex {
   justify-content: space-evenly;
@@ -282,6 +284,7 @@ ul {
 .ourteam {
   margin-top: 550px;
   color: var(--primary);
+  background-color: var(--secondary);
 }
 .container-ourteam {
   margin-top: 20px;
