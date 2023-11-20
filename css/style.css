@@ -68,7 +68,9 @@ body {
 .footer {
   width: 100%;
   display: flex;
-  padding: 1rem 5vw 0;
+  background-color: var(--primary);
+  justify-content: space-around;
+  padding-top: 30px;
 }
 
 .footer-image-logo,
@@ -94,6 +96,7 @@ body {
 .copyright p {
   text-align: center;
   padding-top: 1rem;
+  background-color: var(--primary);
 }
 /* Footer - Main Section End */
 
@@ -153,7 +156,7 @@ body {
 }
 
 .top-menu .title-head h2 {
-  font-size: 3.25rem;
+  font-size: 3rem;
 }
 
 .top-menu .column-menu .top-menu-1 img,
@@ -204,6 +207,20 @@ body {
   border-radius: 10%;
 }
 /* About Us - Main Section End*/
+
+/* Review - Main Section Start */
+.review {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.review .title-head h2 {
+  text-align: center;
+  padding: 50px 0 0 0;
+  font-size: 3rem;
+}
+
+/* Review - Main Section End */
 
 /* MediaQueries */
 
