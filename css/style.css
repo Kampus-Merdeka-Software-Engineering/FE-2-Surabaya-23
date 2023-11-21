@@ -315,8 +315,8 @@ body {
   flex-direction: column;
 }
 .container-visi {
-  width: 400px;
-  height: 230px;
+  width: 500px;
+  height: 250px;
   padding: 64.19000244140625px 50px 81.19998168945312px 50px;
   border-radius: 10px;
   background: var(--primary);
@@ -324,8 +324,8 @@ body {
   margin-top: 30px;
 }
 .container-misi {
-  width: 400px;
-  height: 230px;
+  width: 500px;
+  height: 270px;
   padding: 64.19000244140625px 50px 81.19998168945312px 50px;
   border-radius: 10px;
   background: var(--primary);
@@ -335,7 +335,7 @@ body {
 
 /* start our team */
 .ourteam {
-  margin-top: 550px;
+  margin-top: 600px;
   color: var(--primary);
   background-color: var(--secondary);
 }
@@ -411,7 +411,6 @@ body {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  /* transform: scale(0.9); */
 }
 
 .containerdiv1-6 {
@@ -422,5 +421,4 @@ body {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  /* transform: scale(0.9); */
 }
