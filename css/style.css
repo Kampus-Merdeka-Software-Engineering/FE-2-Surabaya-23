@@ -395,3 +395,37 @@ body {
   height: 200px;
   object-fit: cover;
 }
+
+/* ---- */
+/* Start Page Of Menu */
+.banner {
+	height: 50vh;
+	background-image: url(../asset/banner.webp);
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(30, 34, 34, 0.6);
+}
+.banner-title{
+  text-align: center;
+}
+.banner-title h2{
+  color: white;
+  font-size: 5rem;
+}
+.banner-title h3{
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+}
