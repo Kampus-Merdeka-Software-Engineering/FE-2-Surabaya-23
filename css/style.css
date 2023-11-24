@@ -448,3 +448,47 @@ body {
   font-size: 2rem;
   font-weight: normal;
 }
+
+.list-menu {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+.card {
+  width: 100%;
+  z-index: 1;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.card-image {
+  position: relative;
+  margin: 0 auto;
+}
+
+.card-desc {
+  padding: 10px;
+}
+
+.title-name {
+  font-size: 25px;
+}
+
+.menu-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
