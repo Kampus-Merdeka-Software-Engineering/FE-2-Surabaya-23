@@ -436,19 +436,42 @@ body {
   bottom: 0;
   background-color: rgba(30, 34, 34, 0.6);
 }
+
 .banner-title {
   text-align: center;
 }
+
 .banner-title h2 {
   color: white;
   font-size: 5rem;
 }
+
 .banner-title h3 {
   color: white;
   font-size: 2rem;
   font-weight: normal;
 }
 
+/* Content Menu */
+/* button */
+.option {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 52px 0;
+}
+
+.option-type {
+  padding: 8px 72px;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.option-type:hover {
+  background-color: var(--third);
+  color: var(--secondary);
+}
+
+/* Card */
 .list-menu {
   display: grid;
   row-gap: 30px;
