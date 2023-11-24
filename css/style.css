@@ -69,9 +69,14 @@ body {
   width: 100%;
   display: flex;
   background-color: var(--primary);
+  color: var(--secondary);
   justify-content: space-around;
   padding-top: 30px;
 }
+
+/* .footer .footer-navigation-vert .footer-list {
+  color: var(--secondary);
+} */
 
 .footer-image-logo,
 .footer-navigation-vert,
@@ -92,16 +97,30 @@ body {
 /* .social-icon-media .icon {
   margin: 0 1rem;
 } */
-.footer-contact-section img{
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0 5px 0;
+}
+
+.footer-contact-section img {
+  width: 25px;
+  margin: 0 5px 0 0;
+}
+
+.footer-contact-section p {
+  padding: 0 0 5px 0;
+}
+
+.social-icon-media img {
   width: 25px;
 }
-.social-icon-media img{
-  width: 25px;
-}
+
 .copyright p {
   text-align: center;
   padding-top: 1rem;
   background-color: var(--primary);
+  color: var(--secondary);
 }
 /* Footer - Main Section End */
 
@@ -399,32 +418,32 @@ body {
 /* ---- */
 /* Start Page Of Menu */
 .banner {
-	height: 50vh;
-	background-image: url(../asset/banner.webp);
-	background-size: cover;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  height: 50vh;
+  background-image: url(../asset/banner.webp);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.banner:after{
-	content: " ";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(30, 34, 34, 0.6);
+.banner:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 34, 34, 0.6);
 }
-.banner-title{
+.banner-title {
   text-align: center;
 }
-.banner-title h2{
+.banner-title h2 {
   color: white;
   font-size: 5rem;
 }
-.banner-title h3{
+.banner-title h3 {
   color: white;
   font-size: 2rem;
   font-weight: normal;
