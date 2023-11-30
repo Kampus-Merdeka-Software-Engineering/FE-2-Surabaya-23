@@ -318,7 +318,7 @@ body {
 /* Start to Page About Us */
 .hero {
   display: flex;
-  margin-top: 90px;
+  margin-top: 60px;
   padding: 0 7%;
   background-color: var(--primary);
   justify-content: space-between;

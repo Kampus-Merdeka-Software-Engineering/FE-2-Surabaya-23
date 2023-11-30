@@ -1,0 +1,42 @@
+/* Media queries */
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+    .hero img {
+      margin: 10;
+      width: 20vh;
+    }
+    .info-info{
+      margin-top: -290px;
+    }
+    .hero-img {
+      width: 40vw;
+    }
+    .deskrip {
+      margin-top: 30px;
+    }
+  
+    .container-vimisi {
+      margin-top: -100px;
+      width: 100vw;
+      height: 1100px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+  
+    .ourteam {
+      transform: scale(0.6);
+      margin-top: -70px;
+    }
+  
+    .main {
+      transform: scale(0.7);
+      margin: 0 auto;
+      width: 380px;
+    }
+  }
