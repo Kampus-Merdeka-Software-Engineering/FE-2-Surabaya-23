@@ -15,14 +15,15 @@
     .hero-img {
       width: 40vw;
     }
-    .deskrip {
+    /* .deskrip {
       margin-top: 30px;
-    }
+    } */
   
     .container-vimisi {
-      margin-top: -100px;
+      margin-top: -9px;
+      margin-bottom: 2rem;
       width: 100vw;
-      height: 1100px;
+      height: 45rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -32,13 +33,22 @@
       width: 30rem;
       height: 20rem;
     }
+
+    .info-info {
+      margin-top: 4rem;
+    }
   
     .ourteam {
-      transform: scale(0.6);
-      margin-top: -70px;
+      transform: scale(0.5);
+      margin-top: -10rem;
     }
-    .container-ourteam{
-      margin-bottom: 13rem;
+    /* .ourteam h1{
+      font-size: 7rem;
+    } */
+     .container-ourteam{
+      margin-bottom: 15rem;
+      /* margin-left: 2rem;
+      margin-right: 2rem; */
     }
   
     .main {
