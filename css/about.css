@@ -57,3 +57,44 @@
       width: 380px;
     }
   }
+
+
+
+/* Media Queries */
+
+
+/* Tablet */
+@media (max-width: 758px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .deskrip {
+    margin-top: 20px;
+  }
+
+  .container-vimisi {
+    margin-top: 20px;
+  }
+
+  .container-visi,
+  .container-misi {
+    width: 80%;
+  }
+
+  .ourteam {
+    margin-top: 20px;
+  }
+
+  .container-ourteam {
+    margin-bottom: 20px;
+  }
+
+  .main {
+    width: 70%;
+  }
+}
