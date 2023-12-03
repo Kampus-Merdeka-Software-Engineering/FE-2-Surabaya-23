@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Āahāra</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/review.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="#"><img src="" alt="Āahāra" /></a>
+      </div>
+      <div class="navbar-list">
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="review.html">REVIEW</a></li>
+        </ul>
+      </div>
+      <div class="navbar-extra">
+        <div class="navbar-login">
+          <a href="login.html" class="login">LOGIN</a>
+        </div>
+        <button id="hamburger-menu">☰</button>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Main Section Start -->
+    <main>
+      <div class="review-container">
+        <div class="review-form-container">
+          <h1>Review Form</h1>
+          <form action="" id="reviewForm" class="reviewForm" autocomplete="off">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="personName"
+                name="name"
+                placeholder="Name"
+                required
+                autofocus
+              />
+              <br />
+              <label for="type">Food Type</label>
+              <select name="food-type" id="type">
+                <option value="makanan">Makanan</option>
+                <option value="minuman">Minuman</option>
+                <option value="produk">Produk</option>
+              </select>
+              <label for="title">Food Name</label>
+              <select name="menuName" id="title">
+                <!--Contoh Option nantinya-->
+                <option value="1">Shrimp Fried Rice</option>
+              </select>
+              <br />
+              <label for="reviewArea">Your Review</label> <br />
+              <textarea
+                name="reviewer"
+                id="personReview"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="btn-container">
+              <button>Submit</button>
+            </div>
+          </form>
+          <p id="review-message" class="error-message"></p>
+        </div>
+      </div>
+    </main>
+    <!-- Main Section End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="footer-image-logo">
+        <a href="index.html">
+          <img src="" alt="Āahāra" />
+        </a>
+      </div>
+      <div class="footer-navigation-vert">
+        <div class="footer-head">Link</div>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="review.html">Review</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-contact-section">
+          <div class="footer-head">Contact Us</div>
+          <div class="contact-section">
+            <img src="asset/sosmed/phone.webp" alt="" />
+            <p>(021) 61836763</p>
+          </div>
+          <div class="contact-section">
+            <img src="asset/sosmed/email.webp" alt="" />
+            <p>Āahāra@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-social-section">
+        <div class="footer-head">Social Media</div>
+        <div class="social-icon">
+          <ul class="social-icon-media">
+            <li class="icon">
+              <a href=""
+                ><img src="asset/sosmed/instagram.webp" alt="Instagram"
+              /></a>
+            </li>
+            <li class="icon">
+              <a href=""><img src="asset/sosmed/tiktok.webp" alt="Tiktok" /></a>
+            </li>
+            <li class="icon">
+              <a href=""
+                ><img src="asset/sosmed/facebook.webp" alt="Facebok"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>&copy; 2023 | Āahāra</p>
+    </div>
+  </body>
+</html>

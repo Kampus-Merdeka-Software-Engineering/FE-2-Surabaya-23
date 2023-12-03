@@ -1,0 +1,11 @@
+.review-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 91.97px 50px 50px 50px;
+  padding: 20px 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary);
+}
