@@ -47,6 +47,10 @@ body {
   list-style-type: none;
 }
 
+.navbar .navbar-list .menu li {
+  display: inline-block;
+}
+
 .navbar .navbar-list .menu li a {
   color: var(--primary);
   margin: 0 1rem;
@@ -281,40 +285,6 @@ body {
 
 /* Review - Main Section End */
 
-/* MediaQueries */
-
-/* Tablet */
-@media (max-width: 758px) {
-  html {
-    font-size: 62.5%;
-  }
-
-  #hambergur-menu {
-    display: inline-block;
-  }
-
-  .navbar .navbar-list {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: var(--secondary);
-    width: 30rem;
-    height: 100hv;
-  }
-
-  .navbar .navbar-list .active {
-    right: 0;
-  }
-}
-
-/* Handphone */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-/* ----- */
 /* Start to Page About Us */
 .hero {
   display: flex;
@@ -366,7 +336,8 @@ body {
   background-color: var(--secondary);
 }
 
-.container-visi, .container-misi {
+.container-visi,
+.container-misi {
   width: 400px;
   height: 250px;
   padding: 50px 50px 50px 50px;
@@ -409,7 +380,8 @@ body {
   color: var(--primary);
   background-color: var(--secondary);
 }
-.container-ourteam, .container-rows2{
+.container-ourteam,
+.container-rows2 {
   margin-top: 20px;
   width: 50%;
   height: 18rem;
@@ -556,3 +528,44 @@ body {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+/* MediaQueries Start */
+/* Desktop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hambergur-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--secondary);
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-list .active {
+    right: 0;
+  }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* End of Media Queries */
