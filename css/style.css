@@ -350,14 +350,14 @@ body {
 
 /* start information */
 .info-info {
-  margin-top: 0.5rem;
+  margin-top: 7rem;
 }
 .information {
   margin-top: 40px;
   background-color: var(--secondary);
   padding: 0 7%;
 }
-.information .title-info {
+.information .title-info, .title-info1 {
   text-align: center;
 }
 .information .title-info h2 {
@@ -382,7 +382,8 @@ body {
 }
 .container-ourteam,
 .container-rows2 {
-  margin-top: 20px;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
   width: 50%;
   height: 18rem;
   display: flex;
