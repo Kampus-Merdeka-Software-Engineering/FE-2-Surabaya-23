@@ -439,6 +439,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .banner:after {
   content: " ";
   display: block;
