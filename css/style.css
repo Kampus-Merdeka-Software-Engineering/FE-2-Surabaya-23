@@ -357,7 +357,8 @@ body {
   background-color: var(--secondary);
   padding: 0 7%;
 }
-.information .title-info, .title-info1 {
+.information .title-info,
+.title-info1 {
   text-align: center;
 }
 .information .title-info h2 {
@@ -491,7 +492,7 @@ body {
   display: grid;
   row-gap: 30px;
   column-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   padding: 0px;
 }
 
@@ -561,12 +562,22 @@ body {
   .navbar .navbar-list .active {
     right: 0;
   }
+
+  /* menu page */
+  .list-menu {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+  }
 }
 
 /* Handphone */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  /* menu page */
+  .list-menu {
+    grid-template-columns: 1fr; /* 1 column for mobile */
   }
 }
 
