@@ -22,10 +22,28 @@
     background-color: white;
     width: 30rem;
     height: 100vh;
+    transition: 0.3s;
   }
   .navbar .navbar-nav.active{
     right: 0;
   } 
+
+  .navbar .navbar-nav{
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+.navbar .navbar-nav a::after{
+  transform-origin: 0 0;
+}
+
+.navbar .navbar-nav a:hover::after{
+  transform: scale(0.2);
+}
+
   /* --Navbar End-- */
   .hero{
     flex-direction: column;
