@@ -350,7 +350,7 @@ body {
 
 /* start information */
 .info-info {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .information {
   margin-top: 3rem;
@@ -474,6 +474,8 @@ body {
 
 /* --Navbar End-- */
   .hero {
+    width: auto;
+    float: none;
     flex-direction: column;
     justify-content: center;
     margin-top: 5rem;
@@ -518,8 +520,8 @@ body {
   }
 
   .info-info {
-    margin-top: -8rem;
-    margin-bottom: -20rem;
+    margin-top: 3rem;
+    margin-bottom: -11rem;
   }
 
   /* .title-info {
@@ -530,7 +532,7 @@ body {
   .ourteam {
     transform: scale(0.8);
     margin-top: -5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
   }
 
   .ourteam h2 {
@@ -583,12 +585,6 @@ body {
   }
   .footer {
     display: block;
-  }
-
-  .main {
-    transform: scale(0.5);
-    margin: 0 auto;
-    width: 380px;
   }
 }
 
@@ -785,53 +781,21 @@ body {
   }
 
   .container-vimisi {
-    margin-top: 20px;
-  }
-
-  .container-visi,
-  .container-misi {
-    width: 70%;
+    width: auto;
+    float: none;
   }
 
   .info-info {
+    width: auto;
+    float: none;
     margin-top: 7rem;
   }
 
-  .information{
-    margin-top: 2rem;
-  }
   .ourteam {
-    transform: scale(0.7);
-    margin-top: -1rem;
+    width: auto;
+    float: none;
+    /* transform: scale(0.7); */
+    margin-top: 1rem;
   }
 
-  .container_team{
-    width: 20rem;
-  }
-
-  .ourteam h2{
-    margin-top: -2rem;
-    font-size: 4rem;
-  }
-
-  .container-ourteam {
-    margin-bottom: 8rem;
-  }
-
-  .container-rows2 {
-    margin-bottom: -1rem;
-  }
-  .main {
-    width: 70%;
-  }
-
-  .container-ourteam h1,
-  .container-rows2 h1 {
-    font-size: 1.3rem;
-  }
-
-  .container-ourteam p,
-  .container-rows2 p {
-    font-size: 1.2rem;
-  }
 }
