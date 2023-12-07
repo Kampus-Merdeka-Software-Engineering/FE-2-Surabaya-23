@@ -350,10 +350,10 @@ body {
 
 /* start information */
 .info-info {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 .information {
-  margin-top: 10rem;
+  margin-top: 3rem;
   background-color: var(--secondary);
   padding: 0 7%;
 }
@@ -384,7 +384,7 @@ body {
 .container-ourteam,
 .container-rows2 {
   margin-top: 3rem;
-  margin-bottom: 7rem;
+  margin-bottom: 2.5rem;
   width: 50%;
   height: 18rem;
   display: flex;
@@ -392,8 +392,8 @@ body {
   gap: 50px;
 }
 .container_team {
-  width: 400px;
-  height: 270px;
+  width: 13rem;
+  height: 17rem;
   background-color: var(--primary);
   color: black;
   border-radius: 30px;
@@ -417,17 +417,12 @@ body {
 }
 
 .containerdiv1-6 img {
-  width: 200px;
-  height: 200px;
+  width: 13rem;
+  height: 13rem;
   object-fit: cover;
 }
 .containerdiv1-6 {
   margin-bottom: 1.2rem;
-}
-.containerdiv1-6 img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
 }
 
 /* ---- */
@@ -461,139 +456,140 @@ body {
     right: 0;
   }
 
-.navbar .navbar-nav {
-  color: white;
-  display: block;
-  margin: 1.5rem;
-  padding: 0.5rem;
-  font-size: 2rem;
-}
+  .navbar .navbar-nav {
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
 
-.navbar .navbar-nav a::after {
-  transform-origin: 0 0;
-}
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
 
-.navbar .navbar-nav a:hover::after {
-  transform: scale(0.2);
-}
+  .navbar .navbar-nav a:hover::after {
+    transform: scale(0.2);
+  }
 
 /* --Navbar End-- */
-.hero {
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 5rem;
-  padding-top: 10rem;
-}
-.hero h1 {
-  font-size: 1.6rem;
-}
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    padding-top: 10rem;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
 
-.hero img {
-  margin-bottom: 10rem;
-  width: 18rem;
-}
+  .hero img {
+    margin-bottom: 10rem;
+    width: 18rem;
+  }
 
-/* .info-info{
-    margin-top: -50rem;
+  /* .info-info{
+      margin-top: -50rem;
+    } */
+
+  .hero-img {
+    width: 40vw;
+  }
+
+  .deskrip {
+    margin-top: 30px;
+  }
+
+  .container-vimisi {
+    margin-top: -9px;
+    margin-bottom: -2rem;
+    width: 100vw;
+    height: 45rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .container-visi,
+  .container-misi {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .info-info {
+    margin-top: -8rem;
+    margin-bottom: -20rem;
+  }
+
+  /* .title-info {
+    margin-top: -7rem;
+    margin-bottom: 2rem;
   } */
 
-.hero-img {
-  width: 40vw;
-}
+  .ourteam {
+    transform: scale(0.8);
+    margin-top: -5rem;
+    margin-bottom: 5rem;
+  }
 
-.deskrip {
-  margin-top: 30px;
-}
+  .ourteam h2 {
+    font-size: 4rem;
+    margin-top: -2rem;
+    margin-bottom: -25rem;
+  }
 
-.container-vimisi {
-  margin-top: -9px;
-  margin-bottom: 2rem;
-  width: 100vw;
-  height: 45rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-}
+  .container-ourteam,
+  .container-rows2 {
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 60rem; */
+  }
 
-.container-visi,
-.container-misi {
-  width: 30rem;
-  height: 20rem;
-}
+  .container-ourteam {
+    margin-top: 60rem;
+    margin-bottom: 30rem;
+  }
 
-.info-info {
-  margin-top: -6rem;
-  margin-bottom: -18rem;
-}
+  .container-ourteam h1,
+  .container-rows2 h1 {
+    font-size: 1.5rem;
+  }
 
-.title-info {
-  margin-top: -5rem;
-  margin-bottom: 7rem;
-}
+  .container-ourteam p,
+  .container-rows2 p {
+    font-size: 1.2rem;
+  }
 
-.ourteam {
-  transform: scale(0.8);
-  margin-top: -10rem;
-  margin-bottom: 15rem;
-}
+  .container_team {
+    width: 20rem;
+    height: 32rem;
+  }
+  .container-rows2 {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 69rem;
+    margin-bottom: 2rem;
+  }
 
-.ourteam h2 {
-  font-size: 4rem;
-  margin-top: -7rem;
-  margin-bottom: -25rem;
-}
+  .containerdiv1-6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-.container-ourteam,
-.container-rows2 {
-  flex-direction: column;
-  align-items: center;
-  /* margin-top: 60rem; */
-}
+  .containerdiv1-6 img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .footer {
+    display: block;
+  }
 
-.container-ourteam {
-  margin-top: 60rem;
-  margin-bottom: 30rem;
-}
-.container-ourteam h1,
-.container-rows2 h1 {
-  font-size: 1.5rem;
-}
-
-.container-ourteam p,
-.container-rows2 p {
-  font-size: 1.2rem;
-}
-
-.container_team {
-  width: 20rem;
-  height: 32rem;
-}
-.container-rows2 {
-  align-items: center;
-  flex-direction: column;
-  margin-top: 69rem;
-  margin-bottom: 5rem;
-}
-
-.containerdiv1-6 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.containerdiv1-6 img {
-  width: 20rem;
-  height: 20rem;
-}
-.footer {
-  display: block;
-}
-
-.main {
-  transform: scale(0.5);
-  margin: 0 auto;
-  width: 380px;
-}
+  .main {
+    transform: scale(0.5);
+    margin: 0 auto;
+    width: 380px;
+  }
 }
 
 /* End of mobile */
@@ -746,6 +742,96 @@ body {
   .list-menu {
     grid-template-columns: 1fr; /* 1 column for mobile */
   }
+
 }
 
 /* End of Media Queries */
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 75%;
+  }
+  .navbar .navbar-list {
+    display: none;
+  }
+  .navbar .navbar-login {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-img {
+    width: 9rem;
+  }
+
+  .deskrip {
+    margin-top: 20px;
+  }
+
+  .container-vimisi {
+    margin-top: 20px;
+  }
+
+  .container-visi,
+  .container-misi {
+    width: 70%;
+  }
+
+  .info-info {
+    margin-top: 7rem;
+  }
+
+  .information{
+    margin-top: 2rem;
+  }
+  .ourteam {
+    transform: scale(0.7);
+    margin-top: -1rem;
+  }
+
+  .container_team{
+    width: 20rem;
+  }
+
+  .ourteam h2{
+    margin-top: -2rem;
+    font-size: 4rem;
+  }
+
+  .container-ourteam {
+    margin-bottom: 8rem;
+  }
+
+  .container-rows2 {
+    margin-bottom: -1rem;
+  }
+  .main {
+    width: 70%;
+  }
+
+  .container-ourteam h1,
+  .container-rows2 h1 {
+    font-size: 1.3rem;
+  }
+
+  .container-ourteam p,
+  .container-rows2 p {
+    font-size: 1.2rem;
+  }
+}
