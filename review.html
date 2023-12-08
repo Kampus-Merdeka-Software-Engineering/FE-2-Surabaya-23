@@ -34,19 +34,13 @@
     <main>
       <div class="review-container">
         <div class="review-form-container">
-          <h1>Review Form</h1>
+          <div class="title-head">
+            <div class="form-review">Review Form</div>
+          </div>
           <form action="" id="reviewForm" class="reviewForm" autocomplete="off">
             <div class="form-group">
               <label for="name">Name</label>
-              <input
-                type="text"
-                id="personName"
-                name="name"
-                placeholder="Name"
-                required
-                autofocus
-              />
-              <br />
+              <input type="text" id="personName" name="name" placeholder="Name" required autofocus>
               <label for="type">Food Type</label>
               <select name="food-type" id="type">
                 <option value="makanan">Makanan</option>
@@ -81,12 +75,13 @@
             </div>
           </form>
           <p id="review-message" class="error-message"></p>
+        </div>
       </div>
 
       <!-- Review Section Start -->
       <section class="review">
         <div class="title-head">
-          <h2>Customer Review</h2>
+          <div class="text-review">Customer Review</div>
         </div>
 
         <!--testimonials-box-container------>
