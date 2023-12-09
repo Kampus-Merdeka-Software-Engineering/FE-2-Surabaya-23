@@ -39,7 +39,7 @@ body{
 .container-review .form-review .review-satu{
   background-color: rgb(255, 255, 255);
   width: 90%;
-  height: 380px;
+  height: 400px;
   border-radius: 20px;
   margin-left: 15px;
 }
@@ -72,6 +72,9 @@ body{
   width: 95%;
   height: 100%;
   border-radius: 20px;
+}
+.reviews{
+  color: #f9d71c;
 }
 .btn-group {
 	display: flex;
@@ -120,15 +123,40 @@ body{
 .form-group input{
   background-color: red;
 }
-.wrapper {
-	background: var(--white);
-	padding: 2rem;
-	max-width: 576px;
-	width: 1000px;
-	border-radius: .75rem;
-	box-shadow: var(--shadow);
-	text-align: center;
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: var(--yellow);
 }
+.rating .star {
+	cursor: pointer;
+}
+.rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.rating .star:hover {
+	transform: scale(1.1);
+}
+
 textarea {
 	width: 100%;
 	background: var(--light);
@@ -256,10 +284,6 @@ a {
 .name-user span {
   color: #979797;
   font-size: 0.8rem;
-}
-
-.reviews {
-  color: #f9d71c;
 }
 
 .box-top {

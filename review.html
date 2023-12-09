@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Āahāra</title>
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/review.css" />
+    <!--Fav-icon------------------------------>
+    <link rel="shortcut icon" href="asset/logo.webp"/>
+    <!--using-Font-Awesome-------------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- using box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -39,8 +46,17 @@
               Review Form
             </div>
               <form action="#" method="post">
-                <label for="name" style="margin-left: 20px; font-weight: bold;">Nama Lengkap</label><br>
-                <input type="text" id="personName" name="name" placeholder="Name" required autofocus style="background-color: #F5F5F5; border-radius: 5px; margin-left: 20px; margin-top: 5px; margin-bottom: 5px;"><br>
+                <div class="rating">
+                  <input type="number" name="rating" hidden>
+                  <i class='bx bx-star star' style="--i: 0;"></i>
+                  <i class='bx bx-star star' style="--i: 1;"></i>
+                  <i class='bx bx-star star' style="--i: 2;"></i>
+                  <i class='bx bx-star star' style="--i: 3;"></i>
+                  <i class='bx bx-star star' style="--i: 4;"></i>
+                </div>
+              <br>
+                <label for="name" style="margin-left: 20px; font-weight: bold;">Nama Lengkap</label>
+                <input type="text" id="personName" name="name" placeholder="Name" required autofocus style="background-color: #F5F5F5; border-radius: 5px; margin-left: 20px; margin-top: 5px; margin-bottom: 5px; width: 300px;"><br>
                 <label for="type" style="margin-left: 20px; font-weight: bold;">Food Type</label>
                 <select name="food-type" id="type" style="margin-left: 20px; margin-top: 5px; margin-bottom: 5px;">
                   <option value="makanan">Makanan</option>
@@ -87,8 +103,8 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="far fa-star"></i
-                ><!--Empty star-->
+                <i class="far fa-star"></i>
+                <!--Empty star-->
               </div>
             </div>
             <!--Comments---------------------------------------->
@@ -261,5 +277,7 @@
     <div class="copyright">
       <p>&copy; 2023 | Āahāra</p>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
