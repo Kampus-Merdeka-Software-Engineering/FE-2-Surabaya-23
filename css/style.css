@@ -433,16 +433,15 @@ body {
   html {
     font-size: 55%;
   }
-  .navbar .navbar-list {
-    display: none;
-  }
+
   .navbar .navbar-login {
     display: none;
   }
   #hamburger-menu {
     display: inline-block;
   }
-  .navbar .navbar-nav {
+  
+  .navbar .navbar-list {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -452,11 +451,11 @@ body {
     transition: 0.3s;
   }
 
-  .navbar .navbar-nav.active {
+  .navbar .navbar-list .active {
     right: 0;
   }
 
-  .navbar .navbar-nav {
+  .navbar .navbar-list {
     color: white;
     display: block;
     margin: 1.5rem;
@@ -464,11 +463,11 @@ body {
     font-size: 2rem;
   }
 
-  .navbar .navbar-nav a::after {
+  .navbar .navbar-list a::after {
     transform-origin: 0 0;
   }
 
-  .navbar .navbar-nav a:hover::after {
+  .navbar .navbar-list a:hover::after {
     transform: scale(0.2);
   }
 
