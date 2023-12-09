@@ -18,8 +18,92 @@ body{
 	--light: #F5F5F5;
 	--grey: #AAA;
 	--white: #FFF;
+  --primary: #6f74fc;
+  --secondary: white;
+  --third: #b06ffc;
 	--shadow: 8px 8px 30px rgba(0,0,0,.05);
 }
+
+/* navbar */
+nav {
+  background-color: white;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  color: var(--primary);
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: var(--third);
+  border-bottom: var(--third) 2px solid;
+  transition: 0.1s linear;
+  border-bottom: 1px solid var(--third);
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+/* end navbar */
 
 .container-review{
   /* background-color: red; */
@@ -167,34 +251,6 @@ textarea {
 	resize: none;
 	margin-bottom: .5rem;
 }
-.btn-group {
-	display: flex;
-	grid-gap: .5rem;
-	align-items: center;
-}
-.btn-group .btn {
-	padding: .75rem 1rem;
-	border-radius: .5rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	font-size: .875rem;
-	font-weight: 500;
-}
-.btn-group .btn.submit {
-	background: var(--blue);
-	color: var(--white);
-}
-.btn-group .btn.submit:hover {
-	background: var(--blue-d-1);
-}
-.btn-group .btn.cancel {
-	background: var(--white);
-	color: var(--blue);
-}
-.btn-group .btn.cancel:hover {
-	background: var(--light);
-}
 
 a {
   text-decoration: none;
@@ -332,3 +388,6 @@ a {
   color: #ffffff;
   background-color: #252525;
 }
+
+
+

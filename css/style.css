@@ -23,52 +23,6 @@ body {
   background-color: var(--secondary);
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.4rem 7%;
-  background-color: var(--secondary);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  font-weight: bold;
-  top: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.navbar .navbar-logo img {
-  width: 90px;
-}
-
-.navbar .navbar-list .menu {
-  display: flex;
-  list-style-type: none;
-}
-
-.navbar .navbar-list .menu li {
-  display: inline-block;
-}
-
-.navbar .navbar-list .menu li a {
-  color: var(--primary);
-  margin: 0 1rem;
-  font-size: 1.2rem;
-}
-
-.navbar .navbar-list .menu li a:hover {
-  color: var(--third);
-  border-bottom: var(--third) 2px solid;
-  transition: 0.1s linear;
-}
-
-/* Bagian menu dropdown */
-#hamburger-menu {
-  display: none;
-}
-/* Navbar End */
-
 /* Footer - Main Section Start */
 .footer {
   width: 100%;

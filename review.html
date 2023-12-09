@@ -17,24 +17,27 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <a href="#"><img src="asset/navbar.webp" alt="Āahāra" /></a>
+    <nav>
+      <div class="">
+        <img src="asset/navbar.webp" alt="my-avatar" style="width: 90px; height: 25px; margin-top: 15px; margin-left: 3rem;">
       </div>
-      <div class="navbar-list">
-        <ul class="menu">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="review.html">REVIEW</a></li>
-        </ul>
+      <div id="menu-icon" class="menu-icon">
+        <i class="ph-fill ph-list"></i>
       </div>
-      <div class="navbar-extra">
-        <div class="navbar-login">
-          <a href="login.html" class="login">LOGIN</a>
-        </div>
-        <button id="hamburger-menu">☰</button>
-      </div>
+      <ul id="menu-list" class="hidden">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="review.html">Review</a>
+        </li>
+      </ul>
     </nav>
     <!-- Navbar End -->
     <!-- Main Section Start -->
@@ -279,5 +282,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>
