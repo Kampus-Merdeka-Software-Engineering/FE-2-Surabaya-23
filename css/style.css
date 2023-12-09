@@ -647,6 +647,11 @@ body {
 }
 
 /* Card */
+.container-card {
+  margin: auto;
+  padding: 2rem;
+}
+
 .list-menu {
   display: grid;
   row-gap: 30px;
