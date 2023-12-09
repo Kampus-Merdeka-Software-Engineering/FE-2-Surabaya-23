@@ -22,32 +22,75 @@ menuIcon.addEventListener("click", () => {
 // });
 
 // Review Star
-const allStar = document.querySelectorAll('.rating .star')
-const ratingValue = document.querySelector('.rating input')
+const allStar = document.querySelectorAll(".rating .star");
+const ratingValue = document.querySelector(".rating input");
 
-allStar.forEach((item, idx)=> {
-	item.addEventListener('click', function () {
-		let click = 0
-		ratingValue.value = idx + 1
+allStar.forEach((item, idx) => {
+  item.addEventListener("click", function () {
+    let click = 0;
+    ratingValue.value = idx + 1;
 
-		allStar.forEach(i=> {
-			i.classList.replace('bxs-star', 'bx-star')
-			i.classList.remove('active')
-		})
-		for(let i=0; i<allStar.length; i++) {
-			if(i <= idx) {
-				allStar[i].classList.replace('bx-star', 'bxs-star')
-				allStar[i].classList.add('active')
-			} else {
-				allStar[i].style.setProperty('--i', click)
-				click++
-			}
-		}
-	})
-})
+    allStar.forEach((i) => {
+      i.classList.replace("bxs-star", "bx-star");
+      i.classList.remove("active");
+    });
+    for (let i = 0; i < allStar.length; i++) {
+      if (i <= idx) {
+        allStar[i].classList.replace("bx-star", "bxs-star");
+        allStar[i].classList.add("active");
+      } else {
+        allStar[i].style.setProperty("--i", click);
+        click++;
+      }
+    }
+  });
+});
 // end Review Star
 
-//Fetch data from API Endpoint
+async function fetchReview() {
+  try {
+    const response = await fetch(`${BASE_API_URL}/review`);
+    const data = await response.json();
+    renderReview(data);
+  } catch (error) {
+    console.log(error);
+    throw new Error("Failed to fetch data");
+  }
+}
+
+function renderReview(data) {
+  const divisiContent = document.getElementById("review");
+  const reviewContent = data.map((review) => {
+    return `
+    <div class="testimonial-box">
+    <div class="box-top">
+      <div class="profile">
+        <div class="name-user">
+          <strong>${review.personName}</strong>
+          <span>${review.menu.menuName}</span>
+        </div>
+      </div>
+      <!--reviews------>
+      <div class="reviews">
+        <i class="fas fa-star"></i>
+        <i>${review.rating}</i>
+      </div>
+    </div>
+    <div class="client-comment">
+      <p>
+        ${review.personReview}
+      </p>
+    </div>
+  </div>
+    `;
+  });
+
+  divisiContent.innerHTML = reviewContent.join("");
+}
+
+fetchReview();
+
+//Fetch data menu from API Endpoint
 const BASE_API_URL = "https://be-2-surabaya-23-production.up.railway.app";
 
 async function fetchData() {
@@ -114,6 +157,3 @@ function renderMenu(data) {
 }
 
 fetchData();
-
-
-
