@@ -20,6 +20,7 @@ menuIcon.addEventListener("click", () => {
 //     navbarNav.classList.remove('active');
 //   }
 // });
+<<<<<<< HEAD
 
 // Button Active
 var header = document.getElementById("button");
@@ -141,3 +142,5 @@ fetchData();
 
 
 
+=======
+>>>>>>> c88656a121a3f6f882c3b9b93771efce9d48a92c

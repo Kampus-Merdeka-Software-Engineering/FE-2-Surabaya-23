@@ -9,17 +9,32 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/review.css" />
     <!--Fav-icon------------------------------>
-    <link rel="shortcut icon" href="asset/logo.webp"/>
+    <link rel="shortcut icon" href="asset/logo.webp" />
     <!--using-Font-Awesome-------------------->
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- using box icon -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body>
     <!-- Navbar Start -->
     <nav>
       <div class="">
-        <img src="asset/navbar.webp" alt="my-avatar" style="width: 90px; height: 25px; margin-top: 15px; margin-left: 3rem;">
+        <img
+          src="asset/navbar.webp"
+          alt="my-avatar"
+          style="width: 90px; height: 25px; margin-top: 15px; margin-left: 3rem"
+        />
       </div>
       <div id="menu-icon" class="menu-icon">
         <i class="ph-fill ph-list"></i>
@@ -45,183 +60,86 @@
       <div class="container-review">
         <div class="form-review">
           <div class="review-satu">
-            <div class="title-head">
-              Review Form
-            </div>
-              <form action="#" method="post">
-                <div class="rating">
-                  <input type="number" name="rating" hidden>
-                  <i class='bx bx-star star' style="--i: 0;"></i>
-                  <i class='bx bx-star star' style="--i: 1;"></i>
-                  <i class='bx bx-star star' style="--i: 2;"></i>
-                  <i class='bx bx-star star' style="--i: 3;"></i>
-                  <i class='bx bx-star star' style="--i: 4;"></i>
-                </div>
-              <br>
-                <label for="name" style="margin-left: 20px; font-weight: bold;">Nama Lengkap</label>
-                <input type="text" id="personName" name="name" placeholder="Name" required autofocus style="background-color: #F5F5F5; border-radius: 5px; margin-left: 20px; margin-top: 5px; margin-bottom: 5px; width: 300px;"><br>
-                <label for="type" style="margin-left: 20px; font-weight: bold;">Food Type</label>
-                <select name="food-type" id="type" style="margin-left: 20px; margin-top: 5px; margin-bottom: 5px;">
-                  <option value="makanan">Makanan</option>
-                  <option value="minuman">Minuman</option>
-                  <option value="produk">Produk</option>
-                </select>
-                <label for="title" style="margin-left: 20px; font-weight: bold;">Food Name</label>
-                <select name="menuName" id="title">
-                  <option value="1">Shrimp Fried Rice</option>
-                </select><br><br>
-                <textarea name="opinion" cols="10" rows="5" placeholder="Your review..."></textarea>
-                <div class="btn-group">
-                  <button type="submit" class="btn submit">Submit</button>
-                  <button class="btn cancel">Cancel</button>
-                </div>
-              </form>
+            <div class="title-head">Review Form</div>
+            <form>
+              <div class="rating">
+                <input type="number" name="rating" hidden />
+                <i class="bx bx-star star" style="--i: 0"></i>
+                <i class="bx bx-star star" style="--i: 1"></i>
+                <i class="bx bx-star star" style="--i: 2"></i>
+                <i class="bx bx-star star" style="--i: 3"></i>
+                <i class="bx bx-star star" style="--i: 4"></i>
+              </div>
+              <br />
+              <label for="name" style="margin-left: 20px; font-weight: bold"
+                >Nama</label
+              >
+              <input
+                type="text"
+                id="personName"
+                name="name"
+                placeholder="Name"
+                required
+                autofocus
+                style="
+                  background-color: #f5f5f5;
+                  border-radius: 5px;
+                  margin-left: 20px;
+                  margin-top: 5px;
+                  margin-bottom: 5px;
+                  width: 300px;
+                "
+              /><br />
+              <label for="type" style="margin-left: 20px; font-weight: bold"
+                >Food Type</label
+              >
+              <select
+                name="food-type"
+                id="type"
+                style="margin-left: 20px; margin-top: 5px; margin-bottom: 5px"
+                onchange="fetchTitleMenu()"
+              >
+                <option value="makanan">Makanan</option>
+                <option value="minuman">Minuman</option>
+                <option value="produk">Produk</option>
+              </select>
+              <label for="title" style="margin-left: 20px; font-weight: bold"
+                >Food Name</label
+              >
+              <select name="menuName" id="menuName">
+                <option value="">Pilih Makanan</option>
+              </select>
+              <br /><br />
+              <textarea
+                name="opinion"
+                cols="10"
+                rows="5"
+                id="personReview"
+                placeholder="Your review..."
+              ></textarea>
+              <div class="btn-group">
+                <button type="button" class="btn submit" onclick="addReview()">
+                  Submit
+                </button>
+                <button class="btn cancel">Cancel</button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="user-review">
           <div class="review-dua">
             <!-- Review Section Start -->
-      <section class="review">
-        <div class="title-head">
-          <div class="text-review">Customer Review</div>
-        </div>
+            <section class="review">
+              <div class="title-head">
+                <div class="text-review">Customer Review</div>
+              </div>
+              <!--testimonials-box-container------>
+              <div class="testimonial-box-container" id="review"></div>
 
-        <!--testimonials-box-container------>
-        <div class="testimonial-box-container">
-          <!--BOX-1-------------->
-          <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-              <!--profile----->
-              <div class="profile">
-                <!--name-and-username-->
-                <div class="name-user">
-                  <strong>Pelanggan 1</strong>
-                  <span>@Pelanggan 1</span>
-                </div>
-              </div>
-              <!--reviews------>
-              <div class="reviews">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <!--Empty star-->
-              </div>
-            </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, quaerat quis? Provident temporibus architecto
-                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-                tenetur voluptates incidunt blanditiis sed atque cumque.
-              </p>
-            </div>
-          </div>
-          <!--BOX-2-------------->
-          <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-              <!--profile----->
-              <div class="profile">
-                <!--name-and-username-->
-                <div class="name-user">
-                  <strong>Pelanggan 2</strong>
-                  <span>@Pelanggan 2</span>
-                </div>
-              </div>
-              <!--reviews------>
-              <div class="reviews">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-                ><!--Empty star-->
-              </div>
-            </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, quaerat quis? Provident temporibus architecto
-                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-                tenetur voluptates incidunt blanditiis sed atque cumque.
-              </p>
-            </div>
-          </div>
-          <!--BOX-3-------------->
-          <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-              <!--profile----->
-              <div class="profile">
-                <!--name-and-username-->
-                <div class="name-user">
-                  <strong>Pelanggan 3</strong>
-                  <span>@Pelanggan 3</span>
-                </div>
-              </div>
-              <!--reviews------>
-              <div class="reviews">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i
-                ><!--Empty star-->
-              </div>
-            </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, quaerat quis? Provident temporibus architecto
-                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-                tenetur voluptates incidunt blanditiis sed atque cumque.
-              </p>
-            </div>
-          </div>
-          <!--BOX-4-------------->
-          <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-              <!--profile----->
-              <div class="profile">
-                <!--name-and-username-->
-                <div class="name-user">
-                  <strong>Pelanggan 4</strong>
-                  <span>@Pelanggan 4</span>
-                </div>
-              </div>
-              <!--reviews------>
-              <div class="reviews">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i
-                ><!--Empty star-->
-              </div>
-            </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, quaerat quis? Provident temporibus architecto
-                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-                tenetur voluptates incidunt blanditiis sed atque cumque.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- <article class="review1"></article>
+              <!-- <article class="review1"></article>
         <article class="review2"></article> -->
-      </section>
-      <!-- Review Section Start -->
+            </section>
+            <!-- Review Section Start -->
           </div>
         </div>
       </div>
@@ -231,7 +149,7 @@
     <footer class="footer">
       <div class="footer-image-logo">
         <a href="index.html">
-          <img src="asset/Logo.webp" alt="Āahāra" />
+          <img src="asset/logo.webp" alt="Āahāra" />
         </a>
       </div>
       <div class="footer-navigation-vert">
@@ -280,8 +198,13 @@
     <div class="copyright">
       <p>&copy; 2023 | Āahāra</p>
     </div>
-
+    <!-- tambahan div untuk error message -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="js/script.js"></script>
+    <script src="js/review.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>
