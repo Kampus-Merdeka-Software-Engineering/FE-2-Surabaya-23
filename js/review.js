@@ -1,3 +1,60 @@
+// Review Star
+const allStar = document.querySelectorAll(".rating .star");
+const ratingValue = document.querySelector(".rating input");
+
+allStar.forEach((item, idx) => {
+  item.addEventListener("click", function () {
+    let click = 0;
+    ratingValue.value = idx + 1;
+
+    // Set the global variable with the selected rating
+    selectedRating = idx + 1;
+
+    allStar.forEach((i) => {
+      i.classList.replace("bxs-star", "bx-star");
+      i.classList.remove("active");
+    });
+    for (let i = 0; i < allStar.length; i++) {
+      if (i <= idx) {
+        allStar[i].classList.replace("bx-star", "bxs-star");
+        allStar[i].classList.add("active");
+      } else {
+        allStar[i].style.setProperty("--i", click);
+        click++;
+      }
+    }
+  });
+});
+
+async function addReview() {
+  const menuId = document.getElementById("title").value;
+  const personName = document.getElementById("personName").value;
+  const personReview = document.getElementById("personReview").value;
+
+  try {
+    await fetch(`${API_BASE_URL}/review`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        personName,
+        personReview,
+        rating: selectedRating,
+        menuId,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+  } catch (err) {
+    console.error("Error adding review:", err);
+  } finally {
+    fetchReview();
+  }
+}
+
 //Fetch data menu from API Endpoint
 const BASE_API_URL = "https://be-2-surabaya-23-production.up.railway.app";
 async function fetchReview() {
