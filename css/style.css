@@ -394,7 +394,7 @@ body {
   #hamburger-menu {
     display: inline-block;
   }
-  
+
   .navbar .navbar-list {
     position: absolute;
     top: 100%;
@@ -624,7 +624,8 @@ body {
 }
 
 .card-image img {
-  width: 100%;
+  width: 368px;
+  height: 200px;
   border-radius: 10%;
 }
 
