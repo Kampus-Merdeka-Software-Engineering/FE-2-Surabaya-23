@@ -67,6 +67,12 @@ nav ul li a:hover {
   transition: 0.1s linear;
   border-bottom: 1px solid var(--third);
 }
+/* .active nav ul li a:hover {
+  color: var(--third);
+  border-bottom: var(--third) 2px solid;
+  transition: 0.1s linear;
+  border-bottom: 1px solid var(--third);
+} */
 
 .menu-icon {
   /* background-color: tomato; */
