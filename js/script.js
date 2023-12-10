@@ -113,8 +113,6 @@ function renderMenu(data) {
   articleContent.innerHTML = menuContent.join("");
 }
 
-fetchData();
-
 //fetch review
 async function fetchReview() {
   try {
@@ -158,3 +156,4 @@ function renderReview(data) {
 }
 
 fetchReview();
+fetchData();
