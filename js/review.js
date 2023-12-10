@@ -1,8 +1,10 @@
 const BASE_API_URL = "https://be-2-surabaya-23-production.up.railway.app";
+// const BASE_API_URL = "http://localhost:3000";
 
 // Review Star
 const allStar = document.querySelectorAll(".rating .star");
 const ratingValue = document.querySelector(".rating input");
+let selectedRating = 0;
 
 allStar.forEach((item, idx) => {
   item.addEventListener("click", function () {
@@ -48,15 +50,15 @@ async function fetchTitleMenu() {
 }
 
 async function addReview() {
-  const menuId = document.getElementById("title").value;
+  const menuId = document.getElementById("menuName").value;
   const personName = document.getElementById("personName").value;
   const personReview = document.getElementById("personReview").value;
 
   try {
-    await fetch(`${API_BASE_URL}/review`, {
+    await fetch(`${BASE_API_URL}/review`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json; charset=utf-8",
       },
       body: JSON.stringify({
         personName,
@@ -65,10 +67,20 @@ async function addReview() {
         menuId,
       }),
     });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
+    Toastify({
+      text: "Berhasil menambahkan Review",
+      duration: 3000,
+      destination: "index.html",
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+      onClick: function () {}, // Callback after click
+    }).showToast();
   } catch (err) {
     console.error("Error adding review:", err);
   } finally {
@@ -79,6 +91,8 @@ async function addReview() {
 //Fetch data menu from API Endpoint
 async function fetchReview() {
   try {
+    const divisiContent = document.getElementById("review");
+    divisiContent.innerHTML = "<h3>Loading...</h3>";
     const response = await fetch(`${BASE_API_URL}/review`);
     const data = await response.json();
     renderReview(data);
