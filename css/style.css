@@ -600,9 +600,9 @@ body {
 }
 
 .active, btn:hover{
-  background-color: var(--third);
+  background-color:var(--third) ;
   color: white;
-  box-shadow: 0 0 15px 1px#000000;
+  box-shadow: 0 0 15px 1pxvar(--third);
 }
 
 /* Card */
