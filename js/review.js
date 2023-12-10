@@ -6,6 +6,17 @@ const allStar = document.querySelectorAll(".rating .star");
 const ratingValue = document.querySelector(".rating input");
 let selectedRating = 0;
 
+function clearRating() {
+  selectedRating = 0;
+
+  allStar.forEach((item) => {
+    item.classList.replace("bxs-star", "bx-star");
+    item.classList.remove("active");
+  });
+
+  ratingValue.value = "";
+}
+
 allStar.forEach((item, idx) => {
   item.addEventListener("click", function () {
     let click = 0;
@@ -67,6 +78,12 @@ async function addReview() {
         menuId,
       }),
     });
+
+    document.getElementById("menuName").value = "";
+    document.getElementById("personName").value = "";
+    document.getElementById("personReview").value = "";
+    clearRating();
+
     Toastify({
       text: "Berhasil menambahkan Review",
       duration: 3000,

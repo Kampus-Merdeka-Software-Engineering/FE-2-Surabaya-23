@@ -599,10 +599,11 @@ body {
   color: var(--secondary);
 }
 
-.active, btn:hover{
-  background-color:var(--third) ;
+.active,
+btn:hover {
+  background-color: var(--third);
   color: white;
-  box-shadow: 0 0 15px 1pxvar(--third);
+  box-shadow: 0 0 15px 1pxvar (--third);
 }
 
 /* Card */
@@ -624,7 +625,7 @@ body {
   z-index: 1;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10%;
+  border-radius: 1.5rem;
   background-color: var(--primary);
   color: var(--secondary);
 }
@@ -632,7 +633,7 @@ body {
 .card-image img {
   width: 368px;
   height: 200px;
-  border-radius: 10%;
+  border-radius: 0.625rem;
 }
 
 .card-image {

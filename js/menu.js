@@ -1,3 +1,15 @@
+// Button Active
+var header = document.getElementById("button");
+var btns = header.getElementsByClassName("option-type");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+  });
+}
+// end Button Active
+
 //Fetch data menu from API Endpoint
 const BASE_API_URL = "https://be-2-surabaya-23-production.up.railway.app";
 
