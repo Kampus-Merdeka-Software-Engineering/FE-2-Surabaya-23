@@ -92,6 +92,7 @@
                 name="food-type"
                 id="type"
                 style="margin-left: 20px; margin-top: 5px; margin-bottom: 5px"
+                onchange="fetchTitleMenu()"
               >
                 <option value="makanan">Makanan</option>
                 <option value="minuman">Minuman</option>
@@ -100,8 +101,8 @@
               <label for="title" style="margin-left: 20px; font-weight: bold"
                 >Food Name</label
               >
-              <select name="menuName" id="title">
-                <option value="1">Shrimp Fried Rice</option></select
+              <select name="menuName" id="menuName">
+                <option value="">Pilih Makanan</option></select
               ><br /><br />
               <textarea
                 name="opinion"
@@ -110,7 +111,9 @@
                 placeholder="Your review..."
               ></textarea>
               <div class="btn-group">
-                <button type="submit" class="btn submit">Submit</button>
+                <button type="submit" class="btn submit" onclick="addReview()">
+                  Submit
+                </button>
                 <button class="btn cancel">Cancel</button>
               </div>
             </form>

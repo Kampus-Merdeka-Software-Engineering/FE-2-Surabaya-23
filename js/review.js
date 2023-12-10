@@ -1,3 +1,5 @@
+const BASE_API_URL = "https://be-2-surabaya-23-production.up.railway.app";
+
 // Review Star
 const allStar = document.querySelectorAll(".rating .star");
 const ratingValue = document.querySelector(".rating input");
@@ -25,6 +27,25 @@ allStar.forEach((item, idx) => {
     }
   });
 });
+
+async function fetchTitleMenu() {
+  const type = document.getElementById("type").value;
+  const menuName = document.getElementById("menuName");
+  // Membersihkan opsi sebelum menambahkan yang baru
+  menuName.innerHTML = "";
+  try {
+    const response = await fetch(`${BASE_API_URL}/menu?type=${type}`);
+    const data = await response.json();
+    data.forEach((title) => {
+      const option = document.createElement("option");
+      option.value = title.id;
+      option.text = title.menuName;
+      menuName.appendChild(option);
+    });
+  } catch (err) {
+    console.error(err);
+  }
+}
 
 async function addReview() {
   const menuId = document.getElementById("title").value;
@@ -56,7 +77,6 @@ async function addReview() {
 }
 
 //Fetch data menu from API Endpoint
-const BASE_API_URL = "https://be-2-surabaya-23-production.up.railway.app";
 async function fetchReview() {
   try {
     const response = await fetch(`${BASE_API_URL}/review`);
