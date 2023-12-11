@@ -99,7 +99,7 @@ async function addReview() {
       onClick: function () {}, // Callback after click
     }).showToast();
   } catch (err) {
-    console.error("Error adding review:", err);
+    throw new Error("Failed to fetch data");
   } finally {
     fetchReview();
   }
@@ -114,7 +114,6 @@ async function fetchReview() {
     const data = await response.json();
     renderReview(data);
   } catch (error) {
-    console.log(error);
     throw new Error("Failed to fetch data");
   }
 }
