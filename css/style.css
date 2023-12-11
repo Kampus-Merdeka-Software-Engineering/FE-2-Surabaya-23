@@ -35,7 +35,8 @@ body {
   display: flex;
   background-color: var(--primary);
   color: var(--secondary);
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding-top: 30px;
 }
 
@@ -318,7 +319,8 @@ body {
   padding-top: 5rem;
   margin-top: -5rem;
 }
-.information, .information1 {
+.information,
+.information1 {
   background-color: var(--secondary);
   padding: 0 7%;
 }
@@ -585,6 +587,15 @@ btn:hover {
     align-items: center;
   }
 
+  /* Start index page */
+  .container-section-landing,
+  .container-section-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* End index page */
+
   /* start about us page */
   .hero h1 {
     font-size: 2.5rem;
@@ -663,6 +674,13 @@ btn:hover {
   }
 
   /* --Navbar End-- */
+
+  /* index start */
+  .column-landing-page,
+  .column-about {
+    text-align: center;
+  }
+  /* index end */
   .hero {
     width: auto;
     height: auto;
@@ -707,7 +725,7 @@ btn:hover {
     height: 26rem;
   }
 
-  .container-misi{
+  .container-misi {
     width: 30rem;
     height: 30rem;
   }
@@ -717,12 +735,12 @@ btn:hover {
     margin-top: -13rem;
   }
 
-  .information{
+  .information {
     margin-top: -5rem;
     margin-bottom: 4rem;
   }
 
-  .information1{
+  .information1 {
     margin-top: -4rem;
     padding-top: 3rem;
     padding-bottom: 5rem;
@@ -783,10 +801,6 @@ btn:hover {
   .containerdiv1-6 img {
     width: 20rem;
     height: 20rem;
-  }
-  .footer {
-    margin-top: -20rem;
-    display: block;
   }
 }
 
