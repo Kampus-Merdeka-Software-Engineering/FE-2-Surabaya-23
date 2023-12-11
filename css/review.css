@@ -402,7 +402,12 @@ a {
     height: 35rem;
   }
 }
-
+@media (max-width: 575.98px) {
+  /* --Navbar Start-- */
+  html {
+    font-size: 55%;
+  }
+}
 @media (max-width: 340px) {
   .box-top {
     flex-wrap: wrap;
