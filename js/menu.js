@@ -15,9 +15,9 @@ const BASE_API_URL = "https://be-2-surabaya-23-production.up.railway.app";
 
 async function fetchData() {
   try {
+    const articleContent = document.getElementById("menu");
     const response = await fetch(`${BASE_API_URL}/menu`);
     const data = await response.json();
-    const articleContent = document.getElementById("menu");
 
     // Initial render without filtering
     renderMenu(data);
