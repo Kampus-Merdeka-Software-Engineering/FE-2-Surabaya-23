@@ -275,8 +275,7 @@ body {
 }
 .deskrip {
   background-color: var(--secondary);
-  padding: 0 7%;
-  margin: 1.5rem 0 0;
+  padding: 2rem 7%;
 }
 .deskrip .title {
   text-align: center;
@@ -296,9 +295,9 @@ body {
 /* container visi misi */
 .container-vimisi {
   justify-content: center;
-  margin-top: 20px;
+  padding-top: -1rem;
   width: 100%;
-  height: 18rem;
+  height: 25rem;
   display: flex;
   background-color: var(--secondary);
 }
@@ -311,40 +310,40 @@ body {
   border-radius: 20px;
   background: var(--primary);
   color: var(--secondary);
-  margin-top: 30px;
   margin-left: 30px;
 }
 
 /* start information */
 .info-info {
-  margin-top: 8rem;
+  padding-top: 5rem;
+  margin-top: -5rem;
 }
-.information {
-  margin-top: 3rem;
+.information, .information1 {
   background-color: var(--secondary);
   padding: 0 7%;
 }
 .information .title-info,
-.title-info1 {
+.information1 .title-info {
   text-align: center;
 }
-.information .title-info h2 {
+.information .title-info h2,
+.information1 .title-info h2 {
   color: var(--primary);
   font-size: 2.75rem;
   font-weight: bold;
 }
 
-.information .title-info h3 {
+.information .title-info h3,
+.information1 .title-info h3 {
   color: var(--primary);
   font-size: 1.5rem;
   font-weight: normal;
   margin-left: 100px;
   margin-right: 100px;
 }
-
 /* start our team */
 .ourteam {
-  margin-top: 2rem;
+  padding-top: 3rem;
   color: var(--primary);
   background-color: var(--secondary);
 }
@@ -554,7 +553,7 @@ btn:hover {
 */
 /* ---- */
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   html {
     font-size: 75%;
   }
@@ -586,15 +585,6 @@ btn:hover {
     align-items: center;
   }
 
-  /* Start index page */
-  .container-section-landing,
-  .container-section-about {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* End index page */
-
   /* start about us page */
   .hero h1 {
     font-size: 2.5rem;
@@ -605,7 +595,7 @@ btn:hover {
   }
 
   .deskrip {
-    margin-top: 20px;
+    padding: 2rem;
   }
 
   .container-vimisi {
@@ -616,14 +606,12 @@ btn:hover {
   .info-info {
     width: auto;
     float: none;
-    margin-top: 7rem;
   }
 
   .ourteam {
     width: auto;
     float: none;
     /* transform: scale(0.7); */
-    margin-top: 1rem;
   }
 
   .list-menu {
@@ -631,86 +619,127 @@ btn:hover {
   }
 }
 
-@media screen and (max-width: 575.98px) {
+@media (max-width: 575.98px) {
   /* --Navbar Start-- */
   html {
     font-size: 55%;
   }
 
-  /* index start */
-  .column-landing-page,
-  .column-about {
-    text-align: center;
+  .navbar .navbar-login {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline-block;
   }
 
-  .read-more {
-    margin-top: 1rem;
+  .navbar .navbar-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
   }
 
-  /* index end */
+  .navbar .navbar-list .active {
+    right: 0;
+  }
 
+  .navbar .navbar-list {
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-list a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-list a:hover::after {
+    transform: scale(0.2);
+  }
+
+  /* --Navbar End-- */
   .hero {
     width: auto;
+    height: auto;
     float: none;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .hero img {
-    margin-bottom: 10rem;
-    width: 18rem;
+    width: 20rem;
   }
-
-  /* .info-info{
-      margin-top: -50rem;
-    } */
 
   .hero-img {
     width: 40vw;
   }
 
   .deskrip {
-    margin-top: 30px;
+    margin-top: -3rem;
+    padding-top: 4rem;
   }
 
   .container-vimisi {
-    margin-top: -9px;
-    margin-bottom: -2rem;
+    padding-top: -3rem;
     width: 100vw;
-    height: 45rem;
+    height: 75rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
   }
 
-  .container-visi,
-  .container-misi {
+  .container-visi {
+    margin-top: -10rem;
+    margin-bottom: 3rem;
     width: 30rem;
-    height: 20rem;
+    height: 26rem;
+  }
+
+  .container-misi{
+    width: 30rem;
+    height: 30rem;
   }
 
   .info-info {
-    margin-top: 3rem;
-    margin-bottom: -11rem;
+    padding-top: -5rem;
+    margin-top: -13rem;
+  }
+
+  .information{
+    margin-top: -5rem;
+    margin-bottom: 4rem;
+  }
+
+  .information1{
+    margin-top: -4rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
   }
 
   .ourteam {
+    margin-top: -24rem;
+    background-color: none;
+    height: 200rem;
     transform: scale(0.8);
-    margin-top: -5rem;
-    margin-bottom: 15rem;
   }
 
   .ourteam h2 {
     font-size: 4rem;
-    margin-top: -2rem;
+    padding: 2.5rem 0;
     margin-bottom: -25rem;
+    /* margin-top: -30rem; */
   }
 
   .container-ourteam,
@@ -722,7 +751,7 @@ btn:hover {
 
   .container-ourteam {
     margin-top: 60rem;
-    margin-bottom: 30rem;
+    margin-bottom: 3rem;
   }
 
   .container-ourteam h1,
@@ -742,8 +771,8 @@ btn:hover {
   .container-rows2 {
     align-items: center;
     flex-direction: column;
-    margin-top: 69rem;
-    margin-bottom: 2rem;
+    margin-top: 74rem;
+    margin-bottom: 3rem;
   }
 
   .containerdiv1-6 {
@@ -756,6 +785,7 @@ btn:hover {
     height: 20rem;
   }
   .footer {
+    margin-top: -20rem;
     display: block;
   }
 }
