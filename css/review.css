@@ -97,7 +97,7 @@ nav ul li a:hover {
   border-radius: 20px;
   margin-left: 15px;
 }
-.title-head {
+.title-head-review {
   margin-top: 30px;
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -260,17 +260,17 @@ a {
   text-transform: uppercase;
 }
 
-.title-head {
+.title-head-review {
   display: flex;
   font-size: 24px;
   height: 50px;
   justify-content: center;
   align-items: center;
 }
-.title-head .text-review {
+.title-head-review .text-review {
   font-weight: bold;
 }
-.title-head .form-review {
+.title-head-review .form-review {
   font-weight: bold;
 }
 

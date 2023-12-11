@@ -94,27 +94,25 @@ body {
   padding: 91.97px 40px 40px 40px;
 }
 
-.landing-page-container {
+.container-section {
   max-width: var(--max-width);
   margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
-.landing-page .landing-page-container .column-landing-page {
+.landing-page .container-section .column-landing-page {
   flex: 1;
   padding: 20px;
 }
 
-.landing-page .landing-page-container .column-landing-page h1 {
+.landing-page .container-section .column-landing-page h1 {
   font-size: 4.3rem;
   margin-bottom: 10px;
   color: var(--background);
 }
 
-.landing-page .landing-page-container .column-landing-page .landing-image {
+.landing-page .container-section .column-landing-page .landing-image {
   max-width: 100%;
   height: auto;
   border-radius: 10%;
@@ -147,9 +145,11 @@ body {
 
 .top-menu .title-head h2 {
   font-size: 3rem;
+  color: var(--primary);
 }
 
 .top-menu .column-menu .top-menu-card img {
+  align-items: center;
   border-radius: 10% 10% 0 0;
   width: 100%;
   height: auto;
