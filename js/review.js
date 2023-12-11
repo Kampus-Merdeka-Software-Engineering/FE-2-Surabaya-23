@@ -65,6 +65,21 @@ async function addReview() {
   const personName = document.getElementById("personName").value;
   const personReview = document.getElementById("personReview").value;
 
+  // Validation
+  if (
+    menuId === "" ||
+    personName === "" ||
+    personReview === "" ||
+    selectedRating === 0
+  ) {
+    Swal.fire({
+      title: "Error",
+      text: "Please fill in all required fields",
+      icon: "error",
+    });
+    return; // Exit the function if validation fails
+  }
+
   try {
     await fetch(`${BASE_API_URL}/review`, {
       method: "POST",
