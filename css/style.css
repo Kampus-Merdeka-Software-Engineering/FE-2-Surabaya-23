@@ -322,7 +322,7 @@ body {
 .information,
 .information1 {
   background-color: var(--secondary);
-  padding: 0 7%;
+  padding: 1 7%;
 }
 .information .title-info,
 .information1 .title-info {
@@ -346,6 +346,7 @@ body {
 /* start our team */
 .ourteam {
   padding-top: 3rem;
+  padding-bottom: 2rem;
   color: var(--primary);
   background-color: var(--secondary);
 }
