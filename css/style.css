@@ -39,6 +39,13 @@ body {
   padding-top: 30px;
 }
 
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
 .footer-head {
   border-bottom: 0.1rem solid var(--secondary);
 }
@@ -152,13 +159,13 @@ body {
   align-items: center;
   border-radius: 10% 10% 0 0;
   width: 100%;
-  height: auto;
+  height: 75%;
 }
 
 .top-menu .column-menu .top-menu-card .best-menu-1,
 .top-menu .column-menu .top-menu-card .best-menu-2,
 .top-menu .column-menu .top-menu-card .best-menu-3 {
-  height: 7.375rem;
+  height: 4rem;
   color: var(--secondary);
   display: flex;
   justify-content: center;
@@ -184,22 +191,22 @@ body {
   background-color: var(--primary);
 }
 
-.about-us .column-about {
+.about-us .container-section .column-about {
   flex: 1;
   padding: 1.25rem;
 }
 
-.about-us .column-about img {
+.about-us .container-section .column-about img {
   max-width: 100%;
   height: auto;
   border-radius: 10%;
 }
 
-.about-us .column-about .head-about h2 {
+.about-us .container-section .column-about .head-about h2 {
   font-size: 3rem;
 }
 
-.about-us .column-about .read-more {
+.about-us .container-section .column-about .read-more {
   width: 200px;
   height: 81px;
   border-radius: 30px;
@@ -207,11 +214,11 @@ body {
   font-weight: bold;
 }
 
-.about-us .column-about .read-more a {
+.about-us .container-section .column-about .read-more a {
   padding: 1.5rem 2rem;
 }
 
-.about-us .column-about .head-desc-about {
+.about-us .container-section .column-about .head-desc-about {
   padding: 0.75rem 0;
   text-align: justify;
 }
@@ -434,7 +441,7 @@ btn:hover {
   box-shadow: 0 0 15px 1pxvar (--third);
 }
 
-/* Card */
+/* Card in menu page*/
 .container-card {
   margin: auto;
   padding: 2rem;
@@ -459,7 +466,7 @@ btn:hover {
 }
 
 .card-image img {
-  width: 368px;
+  width: 100%;
   height: 200px;
   border-radius: 0.625rem;
 }
