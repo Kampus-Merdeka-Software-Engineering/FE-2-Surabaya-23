@@ -101,6 +101,13 @@ body {
   padding: 91.97px 40px 40px 40px;
 }
 
+.container-section-landing {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
 .container-section {
   max-width: var(--max-width);
   margin: auto;
@@ -108,18 +115,25 @@ body {
   align-items: center;
 }
 
-.landing-page .container-section .column-landing-page {
+.container-section {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.landing-page .container-section-landing .column-landing-page {
   flex: 1;
   padding: 20px;
 }
 
-.landing-page .container-section .column-landing-page h1 {
+.landing-page .container-section-landing .column-landing-page h1 {
   font-size: 4.3rem;
   margin-bottom: 10px;
   color: var(--background);
 }
 
-.landing-page .container-section .column-landing-page .landing-image {
+.landing-page .container-section-landing .column-landing-page .landing-image {
   max-width: 100%;
   height: auto;
   border-radius: 10%;
@@ -505,22 +519,31 @@ btn:hover {
   html {
     font-size: 62.5%;
   }
-
-  #hambergur-menu {
-    display: inline-block;
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
   }
 
-  .navbar .navbar-list {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: var(--secondary);
-    width: 30rem;
-    height: 100vh;
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
   }
 
-  .navbar .navbar-list .active {
-    right: 0;
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
   }
 
   /* menu page */
