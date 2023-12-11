@@ -84,20 +84,11 @@ async function addReview() {
     document.getElementById("personReview").value = "";
     clearRating();
 
-    Toastify({
-      text: "Berhasil menambahkan Review",
-      duration: 3000,
-      destination: "index.html",
-      newWindow: true,
-      close: true,
-      gravity: "top", // `top` or `bottom`
-      position: "left", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
-      style: {
-        background: "linear-gradient(to right, #00b09b, #96c93d)",
-      },
-      onClick: function () {}, // Callback after click
-    }).showToast();
+    Swal.fire({
+      title: "Review Created",
+      text: "Review has been successfully created",
+      icon: "success",
+    });
   } catch (err) {
     throw new Error("Failed to fetch data");
   } finally {

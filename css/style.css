@@ -803,6 +803,23 @@ btn:hover {
     width: 20rem;
     height: 20rem;
   }
+
+  /* footer */
+  .container-footer {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 1rem;
+  }
+
+  .footer-head {
+    font: bold;
+  }
+
+  .footer-image-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Handphone */

@@ -382,6 +382,25 @@ a {
   .testimonial-heading h1 {
     font-size: 1.4rem;
   }
+
+  .container-review {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 80px;
+  }
+
+  .container-review .form-review {
+    height: auto;
+  }
+  .container-review .form-review,
+  .container-review .user-review {
+    width: 100%;
+  }
+
+  .container-review .user-review {
+    height: 35rem;
+  }
 }
 
 @media (max-width: 340px) {
