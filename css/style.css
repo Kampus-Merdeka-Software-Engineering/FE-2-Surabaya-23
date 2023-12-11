@@ -459,6 +459,7 @@ btn:hover {
 
 /* Card in menu page*/
 .container-card {
+  max-width: var(--max-width);
   margin: auto;
   padding: 2rem;
 }
@@ -628,6 +629,12 @@ btn:hover {
 
   .list-menu {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    margin: 52px 0;
   }
 }
 
