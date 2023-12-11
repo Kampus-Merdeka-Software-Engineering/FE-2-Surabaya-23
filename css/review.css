@@ -67,6 +67,12 @@ nav ul li a:hover {
   transition: 0.1s linear;
   border-bottom: 1px solid var(--third);
 }
+/* .active nav ul li a:hover {
+  color: var(--third);
+  border-bottom: var(--third) 2px solid;
+  transition: 0.1s linear;
+  border-bottom: 1px solid var(--third);
+} */
 
 .menu-icon {
   /* background-color: tomato; */
@@ -74,6 +80,38 @@ nav ul li a:hover {
   display: none;
   margin-right: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+/* end navbar */
+
+
 
 .container-review {
   /* background-color: red; */
