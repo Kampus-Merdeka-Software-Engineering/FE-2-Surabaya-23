@@ -639,14 +639,25 @@ btn:hover {
 }
 
 @media (max-width: 575.98px) {
-  /* --Navbar Start-- */
   html {
     font-size: 55%;
   }
 
+  /* Best seller section */
+  .column-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-menu .column-menu .top-menu-card {
+    width: auto;
+  }
+
+  /* --Navbar Start-- */
   .navbar .navbar-login {
     display: none;
   }
+
   #hamburger-menu {
     display: inline-block;
   }
